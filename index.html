@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Lubricantes, baterías y accesorios para tu vehículo. Encuentra lo que necesitas en Multicentro Los Pits.">
+  <title>Multicentro Los Pits | Todo para tu carro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> Todo para tu carro en un solo lugar <span class="announcement-highlight">·</span> Asesoría para livianos y maquinaria pesada</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Multicentro Los Pits, inicio">
+      <span class="brand-mark" aria-hidden="true"><span class="brand-slash"></span><span class="brand-bolt">ϟ</span></span>
+      <span class="brand-copy"><small>MULTICENTRO</small><strong>LOS <i>PITS</i></strong></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#productos">Productos</a><a href="#categorias">Categorías</a><a href="#nosotros">Nosotros</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" aria-label="Buscar" title="Buscar productos"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+      <button class="cart-trigger" id="open-cart" aria-label="Abrir carrito"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg><span>Carrito</span><b id="cart-count">0</b></button>
+      <button class="mobile-menu" id="mobile-menu" aria-label="Abrir menú"><span></span><span></span></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-noise"></div><div class="hero-copy">
+        <p class="eyebrow"><span></span> TU CENTRO AUTOMOTRIZ</p>
+        <h1>Todo para<br>seguir <em>en marcha.</em></h1>
+        <p class="hero-description">Lubricantes, baterías y repuestos confiables para tu vehículo, tu taller y tu maquinaria.</p>
+        <div class="hero-buttons"><a class="button button-red" href="#productos">Explorar productos <span>↗</span></a><a class="text-link" href="#categorias">Ver categorías <span>↓</span></a></div>
+        <div class="hero-proof"><div class="proof-icon">✓</div><span>Las marcas que conoces.<br><b>La atención que necesitas.</b></span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="hero-ring ring-one"></div><div class="hero-ring ring-two"></div><div class="hero-red-block"></div><div class="hero-label">POWER<br><b>YOUR DRIVE</b></div><div class="hero-oil"><div class="oil-cap"></div><div class="oil-glare"></div><div class="oil-label"><b>FULL</b><strong>SYNTHETIC</strong><small>ENGINE OIL · 5W-30</small></div></div><div class="hero-bolt">ϟ</div><div class="hero-index">01 <span>—</span> 04</div></div>
+      <div class="hero-bottom"><span>ACEITES · BATERÍAS · FILTROS · ACCESORIOS</span><span>HECHO PARA EL CAMINO <b>↗</b></span></div>
+    </section>
+    <section class="category-strip" id="categorias"><div class="section-kicker">ENCUENTRA LO QUE BUSCAS</div><div class="category-list">
+      <button class="category-chip active" data-category="Todos"><span class="chip-icon">✳</span> Todo</button>
+      <button class="category-chip" data-category="Lubricantes"><span class="chip-icon">◉</span> Lubricantes</button>
+      <button class="category-chip" data-category="Baterías"><span class="chip-icon">▣</span> Baterías</button>
+      <button class="category-chip" data-category="Filtros"><span class="chip-icon">▤</span> Filtros</button>
+      <button class="category-chip" data-category="Aditivos"><span class="chip-icon">◌</span> Aditivos</button>
+      <button class="category-chip" data-category="Accesorios"><span class="chip-icon">⌁</span> Accesorios</button>
+    </div></section>
+    <section class="products-section" id="productos">
+      <div class="section-heading"><div><p class="eyebrow dark-eyebrow"><span></span> SELECCIÓN LOS PITS</p><h2>Los favoritos <em>del taller.</em></h2></div><div class="product-tools"><label class="search-box"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="product-search" type="search" placeholder="Buscar productos..." aria-label="Buscar productos"></label><select id="sort-products" aria-label="Ordenar productos"><option value="featured">Destacados</option><option value="price-asc">Menor precio</option><option value="price-desc">Mayor precio</option></select></div></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden>No encontramos productos. Prueba otra búsqueda o categoría.</div>
+    </section>
+    <section class="service-banner" id="nosotros"><div class="service-icon">ϟ</div><div><p class="eyebrow">NO SABES CUÁL ELEGIR?</p><h2>Te ayudamos a encontrar<br>la pieza <em>correcta.</em></h2></div><p>Cuéntanos qué vehículo o maquinaria tienes y te orientamos para que compres con confianza.</p><a class="button button-light" href="mailto:ventas@lospits.example?subject=Asesor%C3%ADa%20de%20producto">Pedir asesoría <span>↗</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark"><span class="brand-slash"></span><span class="brand-bolt">ϟ</span></span><span class="brand-copy"><small>MULTICENTRO</small><strong>LOS <i>PITS</i></strong></span></a><p>Todo para tu carro en un solo lugar.</p><span>© <span id="year"></span> Multicentro Los Pits</span></footer>
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Tu carrito" aria-hidden="true"><div class="cart-head"><div><p class="eyebrow dark-eyebrow"><span></span> TU PEDIDO</p><h2>Tu carrito <span id="drawer-count">(0)</span></h2></div><button class="close-cart" id="close-cart" aria-label="Cerrar carrito">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>⌁</span><b>Tu carrito está vacío</b><p>Encuentra eso que tu vehículo necesita.</p><button class="button button-red" id="continue-shopping">Ver productos <span>↗</span></button></div><div class="cart-footer" id="cart-footer"><div class="subtotal"><span>Subtotal</span><b id="cart-subtotal">$0</b></div><p>Envío e impuestos se calculan al confirmar el pedido.</p><button class="button button-red checkout-button" id="checkout-button">Continuar al pago <span>↗</span></button><small>Pago seguro · Stripe estará disponible al conectar tu cuenta</small></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
