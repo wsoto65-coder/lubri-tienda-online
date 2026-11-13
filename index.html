@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101010">
-  <meta name="description" content="Lubricantes, baterías y accesorios para tu vehículo. Encuentra lo que necesitas en Multicentro Los Pits.">
+  <meta name="description" content="Multicentro Los Pits: distribuidor de lubricantes, baterías, filtros y repuestos automotrices e industriales en El Tigre, Anzoátegui.">
   <title>Multicentro Los Pits | Todo para tu carro</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
       <span class="brand-copy"><small>MULTICENTRO</small><strong>LOS <i>PITS</i></strong></span>
     </a>
     <nav class="desktop-nav" aria-label="Navegación principal">
-      <a href="#productos">Productos</a><a href="#categorias">Categorías</a><a href="#nosotros">Nosotros</a>
+      <a href="#productos">Productos</a><a href="#categorias">Categorías</a><a href="#nosotros">Nosotros</a><a href="#ubicacion">Ubicación</a>
     </nav>
     <div class="header-actions">
       <button class="icon-button search-toggle" aria-label="Buscar" title="Buscar productos"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
@@ -52,9 +52,17 @@
       <div class="product-grid" id="product-grid" aria-live="polite"></div>
       <div class="empty-state" id="empty-state" hidden>No encontramos productos. Prueba otra búsqueda o categoría.</div>
     </section>
-    <section class="service-banner" id="nosotros"><div class="service-icon">ϟ</div><div><p class="eyebrow">NO SABES CUÁL ELEGIR?</p><h2>Te ayudamos a encontrar<br>la pieza <em>correcta.</em></h2></div><p>Cuéntanos qué vehículo o maquinaria tienes y te orientamos para que compres con confianza.</p><a class="button button-light" href="mailto:ventas@lospits.example?subject=Asesor%C3%ADa%20de%20producto">Pedir asesoría <span>↗</span></a></section>
+    <section class="service-banner" id="nosotros"><div class="service-icon">ϟ</div><div><p class="eyebrow">¿NO SABES CUÁL ELEGIR?</p><h2>Te ayudamos a encontrar<br>la pieza <em>correcta.</em></h2></div><p>Somos distribuidores de lubricantes, baterías, filtros y repuestos automotrices e industriales. Asesoría para vehículos y maquinaria.</p><a class="button button-light" href="#ubicacion">Visítanos <span>↗</span></a></section>
+    <section id="ubicacion" style="padding:48px 10.1%;background:#faf9f7;border-bottom:1px solid #e4e2de">
+      <p class="eyebrow dark-eyebrow"><span></span> ENCUÉNTRANOS</p>
+      <h2 style="font:600 clamp(28px,4vw,42px)/1.1 'Space Grotesk',sans-serif;letter-spacing:-.06em;margin:0 0 12px">Multicentro <em style="color:#f3222b;font-style:normal">Los Pits</em></h2>
+      <p style="font-size:13px;color:#555;line-height:1.7;margin:0 0 8px">Distribuidor de lubricantes, baterías, filtros y repuestos automotrices e industriales.</p>
+      <p style="font-size:13px;color:#555;line-height:1.7;margin:0 0 8px"><strong>RIF:</strong> J-504770515</p>
+      <p style="font-size:13px;color:#555;line-height:1.7;margin:0 0 18px"><strong>Dirección:</strong> 4ta carrera Sur entre calles 16 y 17 Sur, El Tigre, estado Anzoátegui, Venezuela.</p>
+      <a class="button button-red" href="https://www.google.com/maps/search/?api=1&amp;query=4ta+carrera+Sur+entre+calles+16+y+17+Sur%2C+El+Tigre%2C+Anzoategui%2C+Venezuela" target="_blank" rel="noopener noreferrer">Ver ubicación en Google Maps <span>↗</span></a>
+    </section>
   </main>
-  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark"><span class="brand-slash"></span><span class="brand-bolt">ϟ</span></span><span class="brand-copy"><small>MULTICENTRO</small><strong>LOS <i>PITS</i></strong></span></a><p>Todo para tu carro en un solo lugar.</p><span>© <span id="year"></span> Multicentro Los Pits</span></footer>
+  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark"><span class="brand-slash"></span><span class="brand-bolt">ϟ</span></span><span class="brand-copy"><small>MULTICENTRO</small><strong>LOS <i>PITS</i></strong></span></a><p>Todo para tu carro en un solo lugar.</p><span>© <span id="year"></span> Multicentro Los Pits · RIF J-504770515</span></footer>
   <div class="cart-backdrop" id="cart-backdrop"></div>
   <aside class="cart-drawer" id="cart-drawer" aria-label="Tu carrito" aria-hidden="true"><div class="cart-head"><div><p class="eyebrow dark-eyebrow"><span></span> TU PEDIDO</p><h2>Tu carrito <span id="drawer-count">(0)</span></h2></div><button class="close-cart" id="close-cart" aria-label="Cerrar carrito">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>⌁</span><b>Tu carrito está vacío</b><p>Encuentra eso que tu vehículo necesita.</p><button class="button button-red" id="continue-shopping">Ver productos <span>↗</span></button></div><div class="cart-footer" id="cart-footer"><div class="subtotal"><span>Subtotal</span><b id="cart-subtotal">$0</b></div><p>Envío e impuestos se calculan al confirmar el pedido.</p><button class="button button-red checkout-button" id="checkout-button">Continuar al pago <span>↗</span></button><small>Pago seguro · Stripe estará disponible al conectar tu cuenta</small></div></aside>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
