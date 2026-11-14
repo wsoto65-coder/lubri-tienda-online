@@ -4,87 +4,80 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101010">
-  <meta name="description" content="Multicentro Los Pits: distribuidor de lubricantes, baterías, filtros y repuestos automotrices e industriales en El Tigre, Anzoátegui.">
-  <title>Multicentro Los Pits | Todo para tu carro</title>
+  <meta name="description" content="Multicentro Los Pits: lubricantes, baterías, filtros y repuestos para vehículos livianos y maquinaria pesada. El Tigre, Anzoátegui.">
+  <title>Multicentro Los Pits | Lubricantes, baterías y repuestos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="announcement"><span class="announcement-dot"></span> Todo para tu carro en un solo lugar <span class="announcement-highlight">·</span> Asesoría para livianos y maquinaria pesada</div>
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Multicentro Los Pits, inicio">
       <span class="brand-mark" aria-hidden="true"><span class="brand-slash"></span><span class="brand-bolt">ϟ</span></span>
-      <span class="brand-copy"><small>MULTICENTRO</small><strong>LOS <i>PITS</i></strong><small style="font-size:7px;letter-spacing:.08em;color:#bbb;margin-top:4px">RIF: J-504770515</small></span>
+      <span class="brand-copy"><strong>Multicentro <i>Los Pits</i></strong><small>RIF: J-504770515</small></span>
     </a>
-    <nav class="desktop-nav" aria-label="Navegación principal">
-      <a href="#productos">Productos</a><a href="#categorias">Categorías</a><a href="#nosotros">Nosotros</a><a href="#ubicacion">Ubicación</a>
+    <button class="mobile-menu" id="mobile-menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a class="nav-active" href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><a href="#nosotros">Sobre nosotros</a><a href="#contacto">Contacto y cotizaciones</a><a href="#ayuda">Ayuda</a>
     </nav>
     <div class="header-actions">
-      <button class="icon-button search-toggle" aria-label="Buscar" title="Buscar productos"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+      <button class="search-toggle" aria-label="Buscar productos" title="Buscar productos"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
       <button class="cart-trigger" id="open-cart" aria-label="Abrir carrito"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg><span>Carrito</span><b id="cart-count">0</b></button>
-      <button class="mobile-menu" id="mobile-menu" aria-label="Abrir menú"><span></span><span></span></button>
     </div>
   </header>
   <main>
     <section class="hero" id="inicio">
-      <div class="hero-noise"></div><div class="hero-copy">
-        <p class="eyebrow"><span></span> TU CENTRO AUTOMOTRIZ</p>
-        <h1>Todo para<br>seguir <em>en marcha.</em></h1>
-        <p class="hero-description">Lubricantes, baterías y repuestos confiables para tu vehículo, tu taller y tu maquinaria.</p>
-        <div class="hero-buttons"><a class="button button-red" href="#productos">Explorar productos <span>↗</span></a><a class="text-link" href="#categorias">Ver categorías <span>↓</span></a></div>
-        <div class="hero-proof"><div class="proof-icon">✓</div><span>Las marcas que conoces.<br><b>La atención que necesitas.</b></span></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> MULTICENTRO LOS PITS · RIF: J-504770515</p>
+        <h1>Lubricantes, baterías y repuestos para vehículos livianos y maquinaria pesada</h1>
+        <p class="hero-description">Catálogo integral para motores a gasolina, diésel pesado, gas y motos. Viscosidades sintéticas y minerales, filtros, bujías, aditivos de potencia y línea de cuidado automotriz.</p>
+        <div class="hero-actions"><a class="button button-red" href="#catalogo">Ver catálogo completo <span>↗</span></a><a class="button button-outline" href="#contacto">Asesoría técnica</a></div>
+        <div class="hero-benefits"><div><b>100%</b><span>Fluidos originales</span></div><div><b>Garantía</b><span>En baterías de arranque</span></div><div><b>Diésel &amp; Gas</b><span>Carga pesada e industrial</span></div><div><b>Despacho</b><span>Consulta disponibilidad</span></div></div>
       </div>
-      <div class="hero-art" aria-hidden="true"><div class="hero-ring ring-one"></div><div class="hero-ring ring-two"></div><div class="hero-red-block"></div><div class="hero-label">POWER<br><b>YOUR DRIVE</b></div><div class="hero-oil"><div class="oil-cap"></div><div class="oil-glare"></div><div class="oil-label"><b>FULL</b><strong>SYNTHETIC</strong><small>ENGINE OIL · 5W-30</small></div></div><div class="hero-bolt">ϟ</div><div class="hero-index">01 <span>—</span> 04</div></div>
-      <div class="hero-bottom"><span>ACEITES · BATERÍAS · FILTROS · ACCESORIOS</span><span>HECHO PARA EL CAMINO <b>↗</b></span></div>
+      <div class="hero-feature" aria-label="Producto destacado: aceite sintético 5W-30">
+        <div class="hero-product-image product-visual oil-can can-5w"><span class="can-cap"></span><span class="can-handle"></span><span class="can-brand">LOS PITS</span><span class="can-spec">FULL<br>SYNTHETIC<small>5W-30</small></span></div>
+        <div class="featured-caption"><span class="featured-kicker">PRODUCTO DESTACADO</span><h2>Aceite Sintético 5W-30 API SP Premium</h2><strong>$38.50</strong><a href="#catalogo">Ver ficha técnica <span>→</span></a></div>
+      </div>
+      <div class="hero-glow"></div>
     </section>
 
-    <section class="contact-bar" aria-label="Contacto para cotizaciones y atención al cliente">
-      <div class="contact-bar-item">
-        <span class="contact-label">Horario</span>
-        <strong>Lun - Sáb: 8:00 am - 5:00 pm</strong>
+    <section class="categories section-wrap" id="categorias">
+      <div class="section-title-row"><div><p class="eyebrow"><span></span> LÍNEAS TÉCNICAS</p><h2>Categorías de aplicación y mantenimiento</h2></div><a class="section-link" href="#catalogo">Explorar todas las familias <span>↗</span></a></div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Lubricantes"><span class="category-icon">▤</span><strong>Lubricantes Motor</strong><small>Gasolina, Gasoil, Gas</small></button>
+        <button class="category-card" data-category="Baterías"><span class="category-icon">▣</span><strong>Baterías Automotrices</strong><small>Livianos y Maquinaria</small></button>
+        <button class="category-card" data-category="Filtros"><span class="category-icon">⚙</span><strong>Filtros y Mantenimiento</strong><small>Aceite, Aire, Combustible</small></button>
+        <button class="category-card" data-category="Motos"><span class="category-icon">♧</span><strong>Motos 2T / 4T</strong><small>Sintético y Semi</small></button>
+        <button class="category-card" data-category="Aditivos"><span class="category-icon">◈</span><strong>Aditivos y Potencia</strong><small>Octanaje y Limpieza</small></button>
+        <button class="category-card" data-category="Accesorios"><span class="category-icon">✦</span><strong>Accesorios y Car Care</strong><small>Luces LED, alfombras, sprays</small></button>
       </div>
-      <div class="contact-bar-item">
-        <span class="contact-label">Domingos</span>
-        <strong>9:00 am - 12:30 pm</strong>
-      </div>
-      <div class="contact-bar-item">
-        <span class="contact-label">Cotización</span>
-        <strong>Consulta rápida por WhatsApp</strong>
-      </div>
-      <a class="contact-bar-button" href="https://wa.me/?text=Hola%20Multicentro%20Los%20Pits%2C%20quiero%20cotizar%20productos%20de%20lubricantes%20y%20bater%C3%ADas." target="_blank" rel="noopener noreferrer" aria-label="Solicitar cotización por WhatsApp">Solicitar cotización</a>
     </section>
 
-    <section class="category-strip" id="categorias"><div class="section-kicker">ENCUENTRA LO QUE BUSCAS</div><div class="category-list">
-      <button class="category-chip active" data-category="Todos"><span class="chip-icon">✳</span> Todo</button>
-      <button class="category-chip" data-category="Lubricantes"><span class="chip-icon">◉</span> Lubricantes</button>
-      <button class="category-chip" data-category="Baterías"><span class="chip-icon">▣</span> Baterías</button>
-      <button class="category-chip" data-category="Filtros"><span class="chip-icon">▤</span> Filtros</button>
-      <button class="category-chip" data-category="Aditivos"><span class="chip-icon">◌</span> Aditivos</button>
-      <button class="category-chip" data-category="Accesorios"><span class="chip-icon">⌁</span> Accesorios</button>
-    </div></section>
-    <section class="products-section" id="productos">
-      <div class="section-heading"><div><p class="eyebrow dark-eyebrow"><span></span> SELECCIÓN LOS PITS</p><h2>Los favoritos <em>del taller.</em></h2></div><div class="product-tools"><label class="search-box"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="product-search" type="search" placeholder="Buscar productos..." aria-label="Buscar productos"></label><select id="sort-products" aria-label="Ordenar productos"><option value="featured">Destacados</option><option value="price-asc">Menor precio</option><option value="price-desc">Mayor precio</option></select></div></div>
+    <section class="catalog-section section-wrap" id="catalogo">
+      <div class="section-title-row catalog-heading"><div><p class="eyebrow"><span></span> INVENTARIO DE DEMOSTRACIÓN</p><h2>Productos más solicitados</h2></div><div class="catalog-tools"><label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="product-search" type="search" placeholder="Buscar en el catálogo" aria-label="Buscar productos"></label><select id="sort-products" aria-label="Ordenar productos"><option value="featured">Destacados</option><option value="price-asc">Menor precio</option><option value="price-desc">Mayor precio</option></select></div><a class="section-link catalog-all" href="#catalogo">Ver catálogo entero <span>↗</span></a></div>
+      <div class="category-filters" id="category-filters"><button class="filter-chip active" data-category="Todos">Todos</button><button class="filter-chip" data-category="Lubricantes">Lubricantes</button><button class="filter-chip" data-category="Baterías">Baterías</button><button class="filter-chip" data-category="Filtros">Filtros</button><button class="filter-chip" data-category="Motos">Motos</button><button class="filter-chip" data-category="Aditivos">Aditivos</button><button class="filter-chip" data-category="Accesorios">Accesorios</button></div>
       <div class="product-grid" id="product-grid" aria-live="polite"></div>
       <div class="empty-state" id="empty-state" hidden>No encontramos productos. Prueba otra búsqueda o categoría.</div>
+      <p class="demo-note">Precios e inventario mostrados son referenciales de demostración. Confirma disponibilidad y precio al cotizar.</p>
     </section>
-    <section class="service-banner" id="nosotros"><div class="service-icon">ϟ</div><div><p class="eyebrow">¿NO SABES CUÁL ELEGIR?</p><h2>Te ayudamos a encontrar<br>la pieza <em>correcta.</em></h2></div><p>Somos distribuidores de lubricantes, baterías, filtros y repuestos automotrices e industriales. Asesoría para vehículos y maquinaria.</p><a class="button button-light" href="#ubicacion">Visítanos <span>↗</span></a></section>
-    <section id="ubicacion" style="padding:48px 10.1%;background:#faf9f7;border-bottom:1px solid #e4e2de">
-      <p class="eyebrow dark-eyebrow"><span></span> ENCUÉNTRANOS</p>
-      <h2 style="font:600 clamp(28px,4vw,42px)/1.1 'Space Grotesk',sans-serif;letter-spacing:-.06em;margin:0 0 12px">Multicentro <em style="color:#f3222b;font-style:normal">Los Pits</em></h2>
-      <p style="font-size:13px;color:#555;line-height:1.7;margin:0 0 8px">Distribuidor de lubricantes, baterías, filtros y repuestos automotrices e industriales.</p>
-      <p style="font-size:13px;color:#555;line-height:1.7;margin:0 0 8px"><strong>RIF:</strong> J-504770515</p>
-      <p style="font-size:13px;color:#555;line-height:1.7;margin:0 0 8px"><strong>Dirección:</strong> 4ta carrera Sur entre calles 16 y 17 Sur, El Tigre, estado Anzoátegui, Venezuela.</p>
-      <p style="font-size:13px;color:#555;line-height:1.7;margin:0 0 18px"><strong>Horario de atención:</strong> Lunes a sábado: 8:00 am - 5:00 pm. Domingos: 9:00 am - 12:30 pm.</p>
-      <a class="button button-red" href="https://www.google.com/maps/search/?api=1&amp;query=4ta+carrera+Sur+entre+calles+16+y+17+Sur%2C+El+Tigre%2C+Anzoategui%2C+Venezuela" target="_blank" rel="noopener noreferrer">Ver ubicación en Google Maps <span>↗</span></a>
+
+    <section class="expertise section-wrap" id="nosotros">
+      <div class="expertise-card"><span class="expertise-number">01</span><h3>Viscosidad y Especificaciones</h3><p>Desde aceites ligeros sintéticos 0W-20 y 5W-30 para motores modernos, hasta monogrados y multigrados 15W-40 y 20W-50 para trabajo pesado y motores a gas.</p></div>
+      <div class="expertise-card"><span class="expertise-number">02</span><h3>Baterías de Alto Rendimiento</h3><p>Opciones para vehículos livianos y maquinaria. Consulta modelos de arranque, tecnología AGM/EFB y baterías para trabajo exigente.</p></div>
+      <div class="expertise-card"><span class="expertise-number">03</span><h3>Línea Técnica y Car Care</h3><p>Sprays desengrasantes, limpiadores de motor, desmanchadores de tapicería, aditivos, bujías, luces LED y accesorios de confort.</p></div>
     </section>
+
+    <section class="quote-cta" id="contacto"><div><p class="eyebrow"><span></span> ASESORÍA Y COTIZACIONES</p><h2>¿Necesitas repuestos, baterías o lubricante para tu flota o vehículo?</h2><p>Explora el catálogo y contáctanos por Instagram para consultar disponibilidad y solicitar una cotización.</p></div><a class="button button-red" href="https://www.instagram.com/multilospits/" target="_blank" rel="noopener noreferrer">Escribir por Instagram <span>↗</span></a></section>
+
+    <section class="business-info section-wrap" id="ayuda"><div><p class="eyebrow"><span></span> VISÍTANOS</p><h2>Multicentro <em>Los Pits</em></h2><p>Distribuidor de lubricantes, baterías, filtros y repuestos automotrices e industriales.</p></div><div class="business-details"><p><b>RIF</b><span>J-504770515</span></p><p><b>Dirección</b><span>4ta carrera Sur entre calles 16 y 17 Sur, El Tigre, estado Anzoátegui, Venezuela.</span></p><p><b>Horario</b><span>Lunes a sábado: 8:00 am - 5:00 pm<br>Domingos: 9:00 am - 12:30 pm</span></p><a class="section-link" href="https://www.google.com/maps/search/?api=1&amp;query=4ta+carrera+Sur+entre+calles+16+y+17+Sur%2C+El+Tigre%2C+Anzoategui%2C+Venezuela" target="_blank" rel="noopener noreferrer">Ver ubicación en Google Maps ↗</a></div></section>
   </main>
-  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark"><span class="brand-slash"></span><span class="brand-bolt">ϟ</span></span><span class="brand-copy"><small>MULTICENTRO</small><strong>LOS <i>PITS</i></strong><small style="font-size:7px;letter-spacing:.08em;color:#bbb;margin-top:4px">RIF: J-504770515</small></span></a><p>Todo para tu carro en un solo lugar.</p><span>© <span id="year"></span> Multicentro Los Pits</span></footer>
+  <footer class="site-footer"><a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true"><span class="brand-slash"></span><span class="brand-bolt">ϟ</span></span><span class="brand-copy"><strong>Multicentro <i>Los Pits</i></strong><small>RIF: J-504770515</small></span></a><span>Todo para tu carro en un solo lugar.</span><span>© <span id="year"></span> Multicentro Los Pits</span><a href="https://www.instagram.com/multilospits/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></footer>
+
   <div class="cart-backdrop" id="cart-backdrop"></div>
-  <aside class="cart-drawer" id="cart-drawer" aria-label="Tu carrito" aria-hidden="true"><div class="cart-head"><div><p class="eyebrow dark-eyebrow"><span></span> TU PEDIDO</p><h2>Tu carrito <span id="drawer-count">(0)</span></h2></div><button class="close-cart" id="close-cart" aria-label="Cerrar carrito">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>⌁</span><b>Tu carrito está vacío</b><p>Encuentra eso que tu vehículo necesita.</p><button class="button button-red" id="continue-shopping">Ver productos <span>↗</span></button></div><div class="cart-footer" id="cart-footer"><div class="subtotal"><span>Subtotal</span><b id="cart-subtotal">$0</b></div><p>Envío e impuestos se calculan al confirmar el pedido.</p><button class="button button-red checkout-button" id="checkout-button">Continuar al pago <span>↗</span></button><small>Pago seguro · Stripe estará disponible al conectar tu cuenta</small></div></aside>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de compras" aria-hidden="true"><div class="cart-head"><div><p class="eyebrow"><span></span> TU PEDIDO</p><h2>Carrito <span id="drawer-count">(0)</span></h2></div><button class="close-cart" id="close-cart" aria-label="Cerrar carrito">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>▣</span><b>Tu carrito está vacío</b><p>Agrega productos del catálogo para armar tu pedido.</p><button class="button button-red" id="continue-shopping">Ver productos</button></div><div class="cart-footer" id="cart-footer"><div class="subtotal"><span>Subtotal referencial</span><b id="cart-subtotal">$0.00</b></div><p>Confirma precio, inventario y despacho con la tienda antes de pagar.</p><a class="button button-red checkout-button" href="https://www.instagram.com/multilospits/" target="_blank" rel="noopener noreferrer">Consultar este pedido <span>↗</span></a><small>Pago en línea aún no habilitado.</small></div></aside>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <a class="whatsapp-float" href="https://wa.me/?text=Hola%20Multicentro%20Los%20Pits%2C%20quiero%20cotizar%20productos%20de%20lubricantes%20y%20bater%C3%ADas." target="_blank" rel="noopener noreferrer" aria-label="Enviar mensaje por WhatsApp">WhatsApp</a>
+  <a class="instagram-float" href="https://www.instagram.com/multilospits/" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Multicentro Los Pits por Instagram">Instagram <span>↗</span></a>
   <script src="app.js"></script>
 </body>
 </html>
